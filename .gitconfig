@@ -1,0 +1,15 @@
+[user]
+	name = Dariusz Orłowski
+	email = dariusz.orlowski@futurum.tech
+[credential]
+	helper = cache --timeout=604800
+[alias]
+	co  = checkout
+	cob = checkout -b
+	ec  = config --global -e
+	up  = pull --rebase --prune
+        undo = reset @~
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -10 
+	dc = diff-tree --no-commit-id --name-status -r
+[core]
+	excludesfile = ~/.config/git/ignore
